@@ -1,3 +1,3 @@
 # Projeto-Mulheres Independentes
- <center><h2>Meu primeiro projeto completo.</h2>
- <h3>Feito entre setembro e novembro de 2024.</h3></center>
+ <h3>Meu primeiro projeto completo.</h3>
+ <h4>Feito entre setembro e novembro de 2024.</h4>
