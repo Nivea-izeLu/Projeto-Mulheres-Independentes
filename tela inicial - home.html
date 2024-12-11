@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home - Mulheres Independentes </title>
+
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="icon"  type="image/png" href="Imagens-icones-fontes/favicon.png">
+    <style>
+    #copyright{
+        color: aliceblue;
+        font-family: 'poppins';
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: right;
+        padding-left: 78%;
+        position:absolute;
+}   
+    .container2 {
+        position: relative;
+        width: 1300px;
+        height: 500px;
+        overflow: hidden;
+        border-radius: 10px;
+        background-image: url("Imagens-icones-fontes/carrossel - apresentação.png");
+        background-repeat: no-repeat;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+}
+  /* carrossel, compilado dos slides */
+    .crrssl {
+        display: flex;
+        width: 700%;
+        animation: slideAnimation 30s infinite;
+}
+  
+    /* pontos pra controlar qual slide vai ver */
+    .pontos {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        gap: 8px;
+}
+
+    .ponto {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+}
+    .ponto:hover{
+		background-color: rgba(0, 0, 0, 0.8);
+}
+    #play{    
+        width: 7px;
+        height: 7px;
+        border: solid rgb(0 0 0 / 50%);
+        border-width: 3px 0px 0px 3px;
+        border-radius: inherit;
+        background-color: transparent;
+        cursor: pointer;
+        position: absolute;
+        left: 703px;
+        top: 3px;
+        transform: translateY(-50%) rotate(135deg);
+   }
+    #play:hover{
+        border-color: rgb(0 0 0 / 80%);
+	}
+
+  /* animação para mudar de slide automaticamente */
+  @keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    14% { transform: translateX(-14.61%); }
+    28% { transform: translateX(-28.90%); }
+    42% { transform: translateX(-43.19%); }
+    56% { transform: translateX(-57.47%); }
+    70% { transform: translateX(-71.75%); }
+    84% { transform: translateX(-86.05%); }
+    98% { transform: translateX(-100.34%); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* deixa os inputs invisiveis */
+  input[type="radio"] {
+    display: none;
+  }
+  
+  /* define qual slide mostrar quando determinado input estiver marcado */
+  #slide1:checked ~ .crrssl { animation: none; transform: translateX(0%); }
+  #slide2:checked ~ .crrssl { animation: none; transform: translateX(-14.61%); }
+  #slide3:checked ~ .crrssl { animation: none; transform: translateX(-28.90%); }
+  #slide4:checked ~ .crrssl { animation: none; transform: translateX(-43.19%); }
+  #slide5:checked ~ .crrssl { animation: none; transform: translateX(-57.47%); }
+  #slide6:checked ~ .crrssl { animation: none; transform: translateX(-71.75%);  }
+  #slide7:checked ~ .crrssl { animation: none; transform: translateX(-86.05%); }
+  #slide7:checked ~ .crrssl { animation: none; transform: translateX(-100.34%); }
+
+
+  /* pontos de controle ativo, qual slide vai mostrar quando tal ponto estiver marcado */
+  #slide1:checked ~ .pontos label[for="slide1"],
+  #slide2:checked ~ .pontos label[for="slide2"],
+  #slide3:checked ~ .pontos label[for="slide3"],
+  #slide4:checked ~ .pontos label[for="slide4"],
+  #slide5:checked ~ .pontos label[for="slide5"],
+  #slide6:checked ~ .pontos label[for="slide6"],
+  #slide7:checked ~ .pontos label[for="slide7"],
+  #slide8:checked ~ .pontos label[for="slide8"],
+  
+  /* deixa os inputs invisiveis */
+    input[type="radio"] {
+        display: none;
+}
+
+  /* estilo para cada slide */
+    .slide {
+        /*width: 1300px;
+        height: 500px;*/
+        width:100%;
+        flex: 1;
+}
+
+    .pic {
+        /*width: 1300px*/
+        width: 100%;;
+        height: 500px;
+        display: block;
+        position: relative;
+        /*top: -30px;
+        left: 30px;*/
+        top: -30px;
+        left: 30px;
+}
+    .caro{
+    background-color: pink;
+    padding: inherit;
+    width: 1300px;
+}
+                     
+    </style>
+<body>
+    <header>
+        <center> <img id="logo" class="img" src="Imagens-icones-fontes/logo transparente.png"> </center>
+
+         <img id="perfilicon" align="right" class="img"  src="Imagens-icones-fontes/perfil icone.png" onclick="ClickPerfil()">
+                
+                <div id="ok">
+                    <ul id="DPperfil" align="right">
+                        <li> <a href="assinatura.html" id="opcao"> <strong>PREMIUM</strong> </a></li>
+                        <li > <a href="index.html" id="opcao"> Sair ➯</a></li>
+                    </ul>
+                </div>
+
+         <img id="menu" align="left" src="Imagens-icones-fontes/menu-de-tres-linhas.png" onclick="ClickMenu()">
+         
+                <ul id="DPmenu">
+                    <li> <a href="tela inicial - home.html" id="opcao">Home</a></li>
+                    <li> <a href="maternidade.html" id="opcao">&nbsp&nbsp • Maternidade</a></li>
+                    <li>  <a href="Culinária.html" id="opcao">&nbsp&nbsp • Culinária</a></li>
+                    <li>  <a href="educacaofinanceira - finanças.html" id="opcao">&nbsp&nbsp • Finanças</a></li>
+                    <li>  <a href="autodefesa.html" id="opcao">&nbsp&nbsp • Autodefesa</a></li>
+                    <li>  <a href="manutencao.html" id="opcao">&nbsp&nbsp • Manutenção</a></li>
+                    <li>  <a href="superacao.html" id="opcao">&nbsp&nbsp • Superação </a></li>
+                    <li> <a href="#duvidas" id="opcao">Dúvidas</a></li>
+                    <li> <a href="sobre nós.html" id="opcao">Sobre nós</a></li>
+                    <li> <a href="mailto:mulheresindependentes@gmail.com" id="opcao">Fale Conosco</a></li>
+                </ul>
+     </header>
+
+
+     <div class="container2">
+
+        <!-- inputs invisíveis para controle manual -->
+        <input type="radio" name="carousel" id="slide1">
+        <input type="radio" name="carousel" id="slide2">
+        <input type="radio" name="carousel" id="slide3">
+        <input type="radio" name="carousel" id="slide4">
+        <input type="radio" name="carousel" id="slide5">
+        <input type="radio" name="carousel" id="slide6">
+        <input type="radio" name="carousel" id="slide7">
+        <input type="radio" name="carousel" id="slide8" checked>
+        
+            <!-- carrossel -->
+            <div class="crrssl">
+                
+				<div class="slide" input type="radio" id="slide1" checked>
+					<a class="caro" href="tela inicial - home.html">
+					    <img class="pic" src="Imagens-icones-fontes/carrossel - apresentação.png" alt="Imagem 1">
+					</a>
+				</div>
+                
+                <div class="slide" input type="radio" id="slide2" >
+				    <a class="caro" href="maternidade.html">
+					    <img class="pic" src="Imagens-icones-fontes/carrossel - maternidade.png" alt="Imagem 2">
+					</a>
+				</div>
+                
+                <div class="slide" input type="radio" id="slide3">
+				    <a class="caro" href="culinária.html">
+				        <img class="pic" src="Imagens-icones-fontes/carrossel - culinaria.png" alt="Imagem 3">
+					</a>
+				</div>
+                
+                <div class="slide" input type="radio" id="slide4">
+				    <a class="caro" href="educacaofinanceira - finanças.html">
+				        <img class="pic" src="Imagens-icones-fontes/carrossel - finanças.png" alt="Imagem 4">
+				    </a>
+				</div>
+                
+                <div class="slide" input type="radio" id="slide5">
+				    <a class="caro" href="autodefesa.html">
+			    	    <img class="pic" src="Imagens-icones-fontes/carrossel - autodefesa.png" alt="Imagem 5">
+				    </a>
+				</div>
+                
+                <div class="slide" input type="radio" id="slide6">
+				    <a class="caro" href="manutencao.html">
+			    	    <img class="pic" src="Imagens-icones-fontes/carrossel - manutenção.png" alt="Imagem 6">
+                    </a>
+				</div>
+                
+                <div class="slide" input type="radio" id="slide7">
+				    <a class="caro" href="superacao.html">
+			    	    <img class="pic" src="Imagens-icones-fontes/carrossel - superação.png" alt="Imagem 6">
+                    </a>
+				</div>
+				
+            </div>
+  
+                <!-- pontos para controle do usuário-->
+            <div class="pontos">
+                <label for="slide1" class="ponto"></label>
+                <label for="slide2" class="ponto"></label>
+                <label for="slide3" class="ponto"></label>
+                <label for="slide4" class="ponto"></label>
+                <label for="slide5" class="ponto"></label>
+                <label for="slide6" class="ponto"></label>
+                <label for="slide7" class="ponto"></label>
+                <label for="slide8" class="ponto" id="play"></label>
+            </div>
+    </div>
+
+
+    <h2 id="sla">Áreas de Conhecimento</h2>
+
+    <div class="container">
+    <center>
+        <div class="card" id="claro">
+            <a href="maternidade.html"> 
+                <img class="img" src="Imagens-icones-fontes/icon-maternidade.jpeg">
+                <center><span> Maternidade </span></center> 
+            </a>
+        </div>
+        <div class="card" id="escuro">
+            <a href="culinária.html"> 
+                 <img class="img" src="Imagens-icones-fontes/icon-culinaria.png" > 
+                 <center><span> Culinária </span></center> 
+            </a>
+        </div>
+        <div class="card" id="claro"> 
+            <a href="educacaofinanceira - finanças.html">  
+                <img class="img" src="Imagens-icones-fontes/icon-finanças.png"> 
+                <center><span> Finanças </span></center> 
+            </a>
+        </div>
+        <br>
+        <div class="card" id="escuro"> 
+            <a href="autodefesa.html">  
+                <img class="img" src="Imagens-icones-fontes/icon-defesa2.png"> 
+                <center><span> Autodefesa</span></center> 
+            </a>
+        </div>
+        <div class="card" id="claro"> 
+            <a href="manutencao.html">  
+                <img class="img" src="Imagens-icones-fontes/icon-manutençao.png"> 
+                <center><span> Manutenção </span></center> 
+            </a>
+        </div>
+        <div class="card" id="escuro"> 
+            <a href="superacao.html">  
+                <img class="img" src="Imagens-icones-fontes/icon-conquistas.jpeg"> 
+                <center><span> Superação </span></center> 
+            </a>
+        </div>
+    </center>
+    
+        <br><br>
+    
+    <footer class="rodapé"> 
+        <div id="rodape">
+            <h2 id="fc"> <a href="mailto:mulheresindependentes@gmail.com"> Fale Conosco </a></h2>
+        </div>  
+
+        <div id="rodape">
+            <h2 id="Sn"> <a href="sobre nós.html"> Sobre Nós </a></h2> 
+        </div>
+
+        <div id="rodape">
+            <h2 id="Sn"> <a href="Referências.pdf" target="_blank"> Referências </a></h2> 
+        </div>
+
+        <p align="right" id="copyright">©  2024 Company - All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

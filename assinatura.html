@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assinatura Premium - Mulheres Independentes </title>
+
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="icon"  type="image/png" href="Imagens-icones-fontes/favicon.png">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+   
+    body{
+        background-color: #4a003cd6;
+    }
+    .rodapé{
+        margin-left: -8px;
+        background-color:#4a003c;
+        width: 100%;
+        height: 60px;  
+        bottom:0;
+        margin-right: -8px;
+        position:absolute;
+        display:flex;
+    }
+    #rodape{
+        display: inline-block;
+        align-items: center;
+        margin-inline: 35px;
+    }
+    #copyright{
+        color: aliceblue;
+        font-family: 'poppins';
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: right;
+        padding-left: 83%;
+        position:absolute;
+}
+ /* NÃO APAGAR ESSA PARTE DO CÓDIGO */
+    </style>
+</head>
+<body>
+    <header>
+        <center> <img id="logo" class="img" src="Imagens-icones-fontes/logo transparente.png"> </center>
+
+         <img id="perfilicon" align="right" class="img" src="Imagens-icones-fontes/perfil icone.png" onclick="ClickPerfil()">
+                
+                <div id="ok">
+                    <ul id="DPperfil" align="right">
+                        <li> <a href="assinatura.html" id="opcao"> <strong>PREMIUM</strong> </a></li>
+                        <li > <a href="index.html" id="opcao"> Sair ➯</a></li>
+                    </ul>
+                </div>
+
+         <img id="menu" align="left" src="Imagens-icones-fontes/menu-de-tres-linhas.png" onclick="ClickMenu()">
+         
+                <ul id="DPmenu">
+                    <li> <a href="tela inicial - home.html" id="opcao">Home</a></li>
+                    <li> <a href="maternidade.html" id="opcao">&nbsp&nbsp • Maternidade</a></li>
+                    <li>  <a href="culinária.html" id="opcao">&nbsp&nbsp • Culinária</a></li>
+                    <li>  <a href="educacaofinanceira - finanças.html" id="opcao">&nbsp&nbsp • Finanças</a></li>
+                    <li>  <a href="autodefesa.html" id="opcao">&nbsp&nbsp • Autodefesa</a></li>
+                    <li>  <a href="manutencao.html" id="opcao">&nbsp&nbsp • Manutenção</a></li>
+                    <li>  <a href="superacao.html" id="opcao">&nbsp&nbsp • Superação </a></li>
+                    <li> <a href="#duvidas" id="opcao">Dúvidas</a></li>
+                    <li> <a href="sobre nós.html" id="opcao">Sobre nós</a></li>
+                    <li> <a href="mailto:mulheresindependentes@gmail.com" id="opcao">Fale Conosco</a></li>
+                </ul>
+     </header>
+
+     <p id="escolha"> <strong>Escolha seu plano</strong> </p>
+     <p id="liltxt">
+        <strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            Cancele a Qualquer Momento.</strong>
+        <br>
+        Você receberá um e-mail de confirmação sempre<br> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+        que seu plano for renovado.
+    </p>
+
+     <div id="mensal">
+        <p>
+          Plano Mensal
+        </p> 
+            <center>
+                <div class="bloquinho">
+                    <div> 
+                            <h1 class="preço">
+                                R$15,90/mês
+                            </h1>
+                            <h3 id="preço"> 
+                                R$ 190,00 ao ano
+                            </h3>
+                                <div>
+                                    <span id="benefícios">
+                                        <ul>
+                                            <li>Obtenha PDFs com as informaçôes de nossas páginas;</li>
+                                            <li>Abaixe os vídeos de nosso site para ver e rever a qualquer hora e lugar;</li>
+                                            <li>Faça parte de nosso NewsLetter e receba novidades em seu e-mail.</li>
+                                        </ul>
+                                    </span> 
+                                    <div id="assine">
+                                        <h1>
+                                            <a href="formulário assinatura.html">Assine</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </center>
+     </div>
+
+     <div id="econo"> Economize 21% </div>
+     <div id="anual">
+        <p>
+            Plano Anual
+        </p>
+        <center>
+            <div class="bloquinho">
+                <div>
+                    <h1 class="preço">
+                        R$ 150,00/ano
+                    </h1>
+                    <h3 id="preço"> 
+                        Parcele em até 6 vezes
+                    </h3>
+                        <div>
+
+                            <span id="benefícios">
+                                <ul>
+                                    <li>Obtenha PDFs com as informaçôes de nossas páginas;</li>
+                                    <li>Abaixe os vídeos de nosso site para ver e rever a qualquer hora e lugar;</li>
+                                    <li>Faça parte de nosso NewsLetter e receba novidades em seu e-mail.</li>
+                                </ul>
+                            </span> 
+                            <div id="assine">
+                                <h1>
+                                    <a href="formulário assinatura.html">Assine</a>
+                                </h1>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </center>
+     </div>
+     
+
+     <div id="explanation">
+            <p id="txt-explanation">Obtenha a experiência completa acessando nosso conteúdo offline <br> em qualquer lugar <br> a todo momento!</p>
+            <center><img src="Imagens-icones-fontes/mulçumana.png" id="muçumana"></img></center>
+     </div>
+
+
+     <footer class="rodapé">
+        <div id="rodape">
+            <h2 id="fc"> <a href="mailto:mulheresindependentes@gmail.com">Fale Conosco</a></h2>
+        </div>  
+        <div id="rodape">
+            <h2 id="Sn"> <a href="sobre nós.html">Sobre Nós</a></h2> 
+       </div>
+       <div id="rodape">
+         <h2 id="Sn"> <a href="Referências.pdf" target="_blank">Referências</a></h2> 
+       </div>
+         <p align="right" id="copyright">©  2024 Company - All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

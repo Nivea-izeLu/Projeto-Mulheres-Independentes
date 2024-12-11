@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pagamento - Mulheres Independentes  </title>
+
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="icon"  type="image/png" href="Imagens-icones-fontes/favicon.png">
+    <style>
+    body{
+        background-color: #4a003cd6;        
+    }
+    .rodapé{
+        margin-left: -8px;
+        background-color:#4a003c;
+        width: 100%;
+        height: 60px;  
+        bottom:0;
+        margin-right: -8px;
+        position:absolute;
+        display:flex;
+    }
+    #rodape{
+        display: inline-block;
+        align-items: center;
+        margin-inline: 35px;
+    }
+    #copyright{
+        color: aliceblue;
+        font-family: 'poppins';
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: right;
+        padding-left: 79%;
+        position:absolute;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <center> <img id="logo" class="img" src="Imagens-icones-fontes/logo transparente.png"> </center>
+
+         <img id="perfilicon" align="right" class="img" src="Imagens-icones-fontes/perfil icone.png" onclick="ClickPerfil()">
+                
+                <div id="ok">
+                    <ul id="DPperfil" align="right">
+                        <li> <a href="assinatura.html" id="opcao"> <strong>PREMIUM</strong> </a></li>
+                        <li > <a href="index.html" id="opcao"> Sair ➯</a></li>
+                    </ul>
+                </div>
+
+         <img id="menu" align="left" src="Imagens-icones-fontes/menu-de-tres-linhas.png" onclick="ClickMenu()">
+         
+                <ul id="DPmenu">
+                    <li> <a href="tela inicial - home.html" id="opcao">Home</a></li>
+                    <li> <a href="maternidade.html" id="opcao">&nbsp&nbsp • Maternidade</a></li>
+                    <li>  <a href="culinária.html" id="opcao">&nbsp&nbsp • Culinária</a></li>
+                    <li>  <a href="educacaofinanceira - finanças.html" id="opcao">&nbsp&nbsp • Finanças</a></li>
+                    <li>  <a href="autodefesa.html" id="opcao">&nbsp&nbsp • Autodefesa</a></li>
+                    <li>  <a href="manutencao.html" id="opcao">&nbsp&nbsp • Manutenção</a></li>
+                    <li>  <a href="superacao.html" id="opcao">&nbsp&nbsp • Superação </a></li>
+                    <li> <a href="#duvidas" id="opcao">Dúvidas</a></li>
+                    <li> <a href="sobre nós.html" id="opcao">Sobre nós</a></li>
+                    <li> <a href="mailto:mulheresindependentes@gmail.com" id="opcao">Fale Conosco</a></li>
+                </ul>
+     </header>
+
+
+
+    <Center>
+        <h1 id="olutiT">Complete sua Assinatura</h1>
+        <h3 id="cartão"> Insira as informações do seu cartão</h3>
+        <form>
+            <span class="dados">Número do cartão</span><br>
+            <input id="input1" type="text" name="idade" size="90" placeholder="1234 1234 1234" >
+            <br>
+            <span class="dados" style="margin-right: 130px;">Validade</span>
+            <span class="dados" style="margin-right: 110px;">CVV</span>
+            <span class="dados" style="margin-right: 140px;">CEP</span> 
+            <br>
+            <input id="input1" type="text" name="idade" size="30" style="margin-right: 13px;" placeholder="01/01/2000">
+            <input id="input1" type="text" name="idade" size="15" style="margin-right: 13px;" placeholder="123">
+            <input id="input1" type="text" name="idade" size="30" placeholder="123456-78">
+            <br>
+            <span class="dados" style="margin-right: 400px;">Nome do titular</span><br>
+            <input id="input1" type="text" name="idade" size="90" placeholder="Ana Maria S. Souza">
+            <br>
+            <span class="dados" style="margin-right: 430px;">CPF do titular</span><br>
+            <input id="input1" type="text" name="idade" size="90" placeholder="1234567890-1">
+            <br>
+        </form>
+        <div id="pagar">
+            <a href="tela inicial - home.html" onclick="ClickDuvidas()">
+                Finalizar Pagamento
+            </a>
+        </div>
+    </Center>
+    
+
+    <footer class="rodapé">
+        <div id="rodape">
+            <h2 id="fc"> <a href="mailto:mulheresindependentes@gmail.com">Fale Conosco</a></h2>
+        </div>  
+        <div id="rodape">
+            <h2 id="Sn"> <a href="sobre nós.html">Sobre Nós</a></h2> 
+       </div>
+       <div id="rodape">
+         <h2 id="Sn"> <a a href="Referências.pdf" target="_blank">Referências</a></h2> 
+       </div>
+         <p align="right" id="copyright">©  2024 Company - All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
